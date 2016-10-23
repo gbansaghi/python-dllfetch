@@ -168,7 +168,7 @@ class DependecyChecker():
 def main():
     parser = argparse.ArgumentParser(description='check DLL dependencies')
     parser.add_argument('FILE', help='check the dependencies of this file')
-    parser.add_argument('-d', '--dir', nargs='*',
+    parser.add_argument('-d', '--dir', nargs='+',
                         help='check for dependencies in these directories')
     parser.add_argument('-t', '--target-dir',
                         help='copy dependencies into this directory')
